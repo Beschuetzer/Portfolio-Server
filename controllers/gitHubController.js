@@ -2,7 +2,6 @@
 const { GraphQLClient, gql } = require('graphql-request');
 
 exports.githubController = async (req, res) => {
-  console.log('process.env.REACT_APP_GITHUB =', process.env.REACT_APP_GITHUB);
   const endpoint = 'https://api.github.com/graphql'
   const graphQLClient = new GraphQLClient(endpoint, {
     headers: {
